@@ -19,6 +19,7 @@ pypdf = "^3.17.3"
 python-dotenv = "^1.0.0"
 langchain = "0.0.216"
 taskipy = "^1.12.2"
+pytest = "^7.4.3"
 
 
 [tool.poetry.group.dev.dependencies]
