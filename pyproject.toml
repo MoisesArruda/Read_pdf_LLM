@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "pdf-project"
+version = "0.1.0"
+description = "Projeto para realizar leitura de PDF"
+authors = ["Moisés Arruda <moises_arruda@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.10"
+isort = "^5.13.2"
+blue = "^0.9.1"
+pydocstyle = "^6.3.0"
+chromadb = "0.4.15"
+openai = "0.28.1"
+seaborn = "^0.13.0"
+tiktoken = "^0.5.2"
+pypdf = "^3.17.3"
+python-dotenv = "^1.0.0"
+langchain = "0.0.216"
+taskipy = "^1.12.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.27.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+known_third_party = []
+
+[tool.taskipy.tasks]
+
+format = "isort . && black ."
+test = "poetry run pytest -v"
+run = "python3 app/main.py"
