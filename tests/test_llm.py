@@ -12,7 +12,7 @@ def test_file_exists():
 def test_create_chat_sucess():
     """Testa o comportamento da função `create_chat()` quando o arquivo .env existe."""
 
-    load.dotenv()
+    load_dotenv()
 
     openai_api_base=os.getenv('OPENAI_API_BASE'),
     openai_api_version=os.getenv('OPENAI_API_VERSION'),
@@ -25,6 +25,3 @@ def test_create_chat_sucess():
 
     # Verificar se a conexão foi bem-sucedida
     assert llm_chat is not None
-
-
-

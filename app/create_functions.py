@@ -60,7 +60,7 @@ def define_pastas(data=None):
     Returns:
         str: Caminho da pasta de dados.
     """
-    data = data or '/home/arruda/langchain/leitor_pdf/data'
+    data = data or r'C:\Users\BlueShift\Downloads\Read_pdf_llm\data'
 
     return data
 

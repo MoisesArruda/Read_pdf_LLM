@@ -41,6 +41,6 @@ def main():
         llm, chain_type='stuff', retriever=db.as_retriever()
     )
     # Executar a consulta
-    query = 'O que é docker? Qual sistema operacional ele funciona? Quais páginas confirmam isso?'
+    query = query or 'Do que se trata as informações deste arquivo?'
 
     print(qa2.run(query))
